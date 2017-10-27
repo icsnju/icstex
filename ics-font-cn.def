@@ -1,0 +1,11 @@
+% ics-font-cn.def : Chinese font definitions
+% vim:ft=tex
+
+%%%% Chinese Font definition
+\setCJKmainfont[ItalicFont={Noto Serif CJK SC}]{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC Light}
+\setCJKfamilyfont{hei}{Noto Sans CJK SC Medium}
+\setCJKfamilyfont{kaiti}{Noto Serif CJK SC Medium}
+
+
