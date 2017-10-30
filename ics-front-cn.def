@@ -6,11 +6,12 @@
 % 首页封面
 \renewcommand\maketitle{%
 \cleardoublepage\pagestyle{empty}\pagenumbering{roman}
-\begin{flushright}
-\fbox{\noindent{\small\ICS@value@docid}} \\
-\end{flushright}
 \includegraphics[scale=0.2]{nju-logo.jpg}
 \includegraphics[scale=0.5]{ics-logo.pdf}
+\hfill
+\begin{minipage}{1in}
+\fbox{\noindent{\small\ICS@value@docid}} \vspace*{2cm}
+\end{minipage}{}
 
 % \hfill \fbox{\bf\ICS@value@classification}
 \null\vspace{4.0cm}
