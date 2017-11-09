@@ -6,9 +6,22 @@
 \usepackage{dingbat}
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 
+\usepackage{eso-pic}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{back.png}%
+\vfill
+}}}
+
 \begin{document}
-\title{关于紫荆整改的方案征集}                % 标题。上限 17 个汉字宽度，不可以换行。
-\subtitle{}             % 可选副标题。上限 20 个汉字，不可以换行。
+\AddToShipoutPicture*{\BackgroundPic}
+\title{南京师范大学}                % 标题。上限 17 个汉字宽度，不可以换行。
+\subtitle{高性能计算机集群系统}             % 可选副标题。上限 20 个汉字，不可以换行。
+\subsubtitle{投标文件}             % 可选副标题。上限 20 个汉字，不可以换行。
                         % 正副标题一共上限 30 个汉字。
 %\date{}                % 日期。
                         % 括弧内留空：封面不出现日期。

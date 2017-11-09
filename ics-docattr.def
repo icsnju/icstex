@@ -10,6 +10,9 @@
 \newcommand\subtitle[1]{\def\ICS@value@subtitle{#1}} % 副标题
 \providecommand\ICS@value@subtitle{}
 
+\newcommand\subsubtitle[1]{\def\ICS@value@subsubtitle{#1}} % 副标题
+\providecommand\ICS@value@subsubtitle{}
+
 \renewcommand\author[1]{\def\ICS@value@author{#1}} % 责任作者
 \providecommand\ICS@value@author{}
 

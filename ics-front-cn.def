@@ -6,25 +6,31 @@
 % 首页封面
 \renewcommand\maketitle{%
 \cleardoublepage\pagestyle{empty}\pagenumbering{roman}
-\includegraphics[scale=0.2]{nju-logo.jpg}
-\includegraphics[scale=0.5]{ics-logo.pdf}
-\hfill
-\begin{minipage}{1in}
-\fbox{\noindent{\small\ICS@value@docid}} \vspace*{2cm}
-\end{minipage}{}
+% \includegraphics[scale=0.2]{nju-logo.jpg}
+% \includegraphics[scale=0.5]{ics-logo.pdf}
+% \hfill
+% \begin{minipage}{1in}
+% \fbox{\noindent{\small\ICS@value@docid}} \vspace*{2cm}
+% \end{minipage}{}
 
 % \hfill \fbox{\bf\ICS@value@classification}
-\null\vspace{4.0cm}
 
-\begin{center}
+\null\vspace{12.0cm}
+
+\begin{flushleft}
 \CJKfamily{hei}\Huge~\ICS@value@title~\\
-\LARGE~\ICS@value@subtitle~
+\Huge~\ICS@value@subtitle~\\
+\Huge~\ICS@value@subsubtitle~
+\end{flushleft}
 \vfill
 % \includegraphics[scale=0.3]{nju.jpg} \\
-\CJKfamily{hei}\large 南京大学计算机软件研究所 \\
+\begin{flushright}
+\CJKfamily{hei}\large 致: 江苏苏美达集团公司\\
+\bigbreak
+\large  投标公司: 南京杰世欣计算机科技有限公司\\
 {\small~\ICS@value@date~}\\
 \vspace{0.3cm} \null
-\end{center}
+\end{flushright}
 }
 
 \newcommand\ICS@value@fulltitle{%
