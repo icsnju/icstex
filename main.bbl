@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{liu2009greencloud}
+L.~Liu, H.~Wang, X.~Liu, X.~Jin, W.~B. He, Q.~B. Wang, and Y.~Chen,
+  ``Greencloud: a new architecture for green data center,'' in {\em Proceedings
+  of the 6th international conference industry session on Autonomic computing
+  and communications industry session}, pp.~29--38, ACM, 2009.
 
 \end{thebibliography}
