@@ -6,90 +6,26 @@
 % 首页封面
 \renewcommand\maketitle{%
 \cleardoublepage\pagestyle{empty}\pagenumbering{roman}
-\includegraphics[scale=0.2]{nju-logo.jpg}
-\includegraphics[scale=0.5]{ics-logo.pdf}
-\hfill
-\begin{minipage}{1in}
-\fbox{\noindent{\small\ICS@value@docid}} \vspace*{2cm}
-\end{minipage}{}
-
-% \hfill \fbox{\bf\ICS@value@classification}
-\null\vspace{4.0cm}
+\noindent{\bf \Large 附件} \\
+\noindent{\large 项目编号: \ICS@value@docid}
+\hfill {\large 密级: \ICS@value@classification}
+\null\vspace{3.0cm}
 
 \begin{center}
 \CJKfamily{hei}\Huge~\ICS@value@title~\\
 \LARGE~\ICS@value@subtitle~
 \vfill
-% \includegraphics[scale=0.3]{nju.jpg} \\
-\CJKfamily{hei}\large 南京大学计算机软件研究所 \\
-{\small~\ICS@value@date~}\\
-\vspace{0.3cm} \null
-\end{center}
-}
-
-\newcommand\ICS@value@fulltitle{%
- \ifdefvoid{\ICS@value@subtitle}{\ICS@value@title}{\mbox{\ICS@value@title：} \mbox{\ICS@value@subtitle}}%
-}
-
-\OverwriteEnviron{abstract}[1][]{
-\cleardoublepage
-\begin{center}
-\normalsize\bfseries
-\begin{tabular}{clcl} \thickhline
-标\hfill 题 & \multicolumn{3}{p{0.68\textwidth}}{\kt\ICS@value@fulltitle}
-\\ \hline
-编\hfill 号 & \multicolumn{1}{l}{\kt\ICS@value@docid} & 密\hfill 级 & \kt\ICS@value@classification \\
-类\hfill 别 & \multicolumn{1}{l}{\kt\ICS@value@doctype}  & 状\hfill 态 & \kt\ICS@value@docstatus \\ 
-关联文档 & \multicolumn{3}{l}{\kt\ICS@value@relatedid} \\
-\hline
-责任作者 & \kt\ICS@value@author & 客户单位 & \kt\ICS@value@clientname \\ 
-联系方式 & \kt\small\ICS@value@email & 联系方式 & \kt\small\ICS@value@clientemail\\
- & \\ 
-签\hfill 署 & \hspace{0.33\textwidth}\null & 会\hfill 签 & \hspace{0.33\textwidth}\null\\
- & \\
-日\hfill 期 &  & 日\hfill 期 \\  \hline 
-% \multicolumn{4}{c}{摘\hspace{2em}要} \\ 
-% \multicolumn{4}{c}{\parbox[t]{0.9\textwidth}{\small\kt\hspace{2em}\BODY}}\\
-% \\ \thickhline 
-% \multirow{2}{*}{备\hfill 注}
-\end{tabular}\end{center}
-\null\hfill{\bf\copyright 南京大学计算机软件研究所}\hspace{0.5em}
-}
-
-\def\ICS@opt@customHdr{customHdr}
-\NewEnviron{revisions}[1][defaultHdr]{
-  \def\argtmp{#1}
-  \null\vfill
-  \begin{center}
-    修订记录\par\vspace{1ex}
-  \ifx\argtmp\ICS@opt@customHdr
-    \BODY
-  \else
-    \kt\small
-    \begin{tabular}{llll}
-    \thickhline
-    \bf 版本 &\bf 日期  & \bf 负责人 & \bf 备注 \\ \hline 
-    \BODY
-    \thickhline \end{tabular}
-  \fi
-  \end{center}
-}
-
-% 最后封面
-\newcommand\backcover{
-\cleartoleftpage\pagestyle{empty}\pagenumbering{roman}\setcounter{page}{0}
-\begin{flushright}
-{\small\ICS@value@docid} \\
-% \fbox{\bf\ICS@value@classification} \\
-\CJKfamily{hei}\large~\ICS@value@fulltitle
-\end{flushright}
+\CJKfamily{kaiti}\large
+\begin{tabular}{p{10.3em}c}
+项目名称： & \underline{\makebox[20em]{可持续演化的智能化软件理论、方法和技术}}  \\
+项目牵头单位（盖章）：& \underline{\makebox[20em]{南京大学}}  \\
+项目负责人（签字）：& \underline{\makebox[20em]{吕建}}  \\
+所属专项：& \underline{\makebox[20em]{云计算和大数据}}  \\ 
+执行期限：& \underline{\makebox[20em]{2017年9月 \quad 至 \quad 2021年8月}}  \\
+\end{tabular}
 \vfill
-\begin{center}
-% \includegraphics[scale=0.3]{nju-logo.jpg} \\
-\includegraphics[scale=0.2]{nju-logo.jpg}
-\includegraphics[scale=0.5]{ics-logo.pdf} \\
-\CJKfamily{hei}\large 南京大学计算机软件研究所 \\
-{\small~\ICS@value@date~}\\
+\CJKfamily{kaiti}\large 科技部高技术研究发展中心制 \\
+{\small 二〇一七年八月}\\
 \vspace{0.3cm} \null
 \end{center}
 }
